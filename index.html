@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+  <meta charset="UTF-8" />
+  <script>
+    var coverSupport = 'CSS' in window && typeof CSS.supports === 'function' && (CSS.supports('top: env(a)') ||
+      CSS.supports('top: constant(a)'))
+    document.write(
+      '<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0' +
+      (coverSupport ? ', viewport-fit=cover' : '') + '" />')
+  </script>
+  <title></title>
+  <!--preload-links-->
+  <!--app-context-->
+  <style>
+    #app-loading {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: #ffffff;
+      z-index: 9999;
+      transition: opacity 0.3s ease-in-out;
+    }
+
+    #app-loading.fade-out {
+      opacity: 0;
+    }
+
+    .loading-spinner {
+      position: relative;
+      width: 60px;
+      height: 60px;
+    }
+
+    .loading-spinner::before,
+    .loading-spinner::after {
+      content: '';
+      position: absolute;
+      border-radius: 50%;
+    }
+
+    .loading-spinner::before {
+      width: 60px;
+      height: 60px;
+      top: 0;
+      left: 0;
+      border: 4px solid transparent;
+      border-top-color: #e1251b;
+      border-right-color: #e1251b;
+      animation: spin-reverse 1.2s linear infinite;
+    }
+
+    .loading-spinner::after {
+      width: 36px;
+      height: 36px;
+      top: 12px;
+      left: 12px;
+      border: 4.5px solid transparent;
+      border-bottom-color: #e1251b;
+      border-left-color: #e1251b;
+      animation: spin 0.8s linear infinite;
+    }
+
+    @keyframes spin {
+      0% {
+        transform: rotate(0deg);
+      }
+
+      100% {
+        transform: rotate(360deg);
+      }
+    }
+
+    @keyframes spin-reverse {
+      0% {
+        transform: rotate(0deg);
+      }
+
+      100% {
+        transform: rotate(-360deg);
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div id="app-loading">
+    <div class="loading-spinner"></div>
+  </div>
+  <div id="app"><!--app-html--></div>
+  <script type="module" src="/src/main.js"></script>
+</body>
+
+</html>

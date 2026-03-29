@@ -1,0 +1,204 @@
+{
+	"easycom": {
+		"autoscan": true,
+		"custom": {
+			"^u-(.*)": "uview-pro/components/u-$1/u-$1.vue",
+			"^up-(.*)": "uview-plus/components/u-$1/u-$1.vue"
+		}
+	},
+	"pages": [
+		{
+			"path": "pages/user/home/home",
+			"style": {
+				"navigationBarTitleText": "零食铺",
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			"path": "pages/user/order/submit",
+			"style": {
+				"navigationBarTitleText": "结算",
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			"path": "pages/user/order/record",
+			"style": {
+				"navigationBarTitleText": "订单历史",
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			"path": "pages/user/order/pay",
+			"style": {
+				"navigationBarTitleText": "支付"
+			}
+		},
+		{
+			"path": "pages/user/user/edit",
+			"style": {
+				"navigationBarTitleText": "信息管理",
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			"path": "pages/user/user/login",
+			"style": {
+				"navigationBarTitleText": "登录",
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			"path": "pages/user/user/register",
+			"style": {
+				"navigationBarTitleText": "注册",
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			"path": "pages/user/shop/status",
+			"style": {
+				"navigationBarTitleText": "店铺打烊",
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			"path": "pages/user/mine/mine",
+			"style": {
+				"navigationBarTitleText": "我的",
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			"path": "pages/admin/dashboard",
+			"style": {
+				"navigationBarTitleText": "控制台",
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			"path": "pages/admin/product/index",
+			"style": {
+				"navigationBarTitleText": "商品管理",
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			"path": "pages/admin/product/edit",
+			"style": {
+				"navigationBarTitleText": "商品编辑",
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			"path": "pages/admin/config/index",
+			"style": {
+				"navigationBarTitleText": "配置管理",
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			"path": "pages/admin/category/index",
+			"style": {
+				"navigationBarTitleText": "分类管理",
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			"path": "pages/admin/user/index",
+			"style": {
+				"navigationBarTitleText": "用户管理",
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			"path": "pages/admin/inventory/index",
+			"style": {
+				"navigationBarTitleText": "库存管理",
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			"path": "pages/admin/inventory/edit",
+			"style": {
+				"navigationBarTitleText": "库存编辑",
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			"path": "pages/admin/inventory-loss/index",
+			"style": {
+				"navigationBarTitleText": "库损管理",
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			"path": "pages/admin/inventory-loss/edit",
+			"style": {
+				"navigationBarTitleText": "库损编辑",
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			"path": "pages/admin/order/index",
+			"style": {
+				"navigationBarTitleText": "订单管理",
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			"path": "pages/admin/order/detail",
+			"style": {
+				"navigationBarTitleText": "订单详情",
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			"path": "pages/user/about/index",
+			"style": {
+				"navigationBarTitleText": "关于我们",
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			"path": "pages/user/product/detail",
+			"style": {
+				"navigationBarTitleText": "商品详情",
+				"navigationStyle": "custom"
+			}
+		}
+	],
+	"tabBar": {
+		"color": "#999999",
+		"selectedColor": "#e1251b",
+		"backgroundColor": "#ffffff",
+		"borderStyle": "black",
+		"height": "100rpx",
+		"list": [
+			{
+				"pagePath": "pages/user/home/home",
+				"text": "首页",
+				"iconPath": "static/tabbar/home.svg",
+				"selectedIconPath": "static/tabbar/home-active.svg"
+			},
+			{
+				"pagePath": "pages/user/order/record",
+				"text": "订单",
+				"iconPath": "static/tabbar/order.svg",
+				"selectedIconPath": "static/tabbar/order-active.svg"
+			},
+			{
+				"pagePath": "pages/user/mine/mine",
+				"text": "我的",
+				"iconPath": "static/tabbar/mine.svg",
+				"selectedIconPath": "static/tabbar/mine-active.svg"
+			}
+		]
+	},
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "零食铺",
+		"navigationBarBackgroundColor": "#FAFAFA",
+		"backgroundColor": "#F8F8F8"
+	}
+}
